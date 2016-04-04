@@ -64,6 +64,32 @@ object parseJson {
 		 implicit val claXFormat2 = jsonFormat8(claX2)
  		}
 
+
+ // This is the code that is blowing up
+ case class claX2Collection(items: Array[claX2]) extends IndexedSeq[claX2]{
+    def apply(index: Int) = items(index)
+    def length = items.length
+}
+
+object MyJsonProtocol3 extends DefaultJsonProtocol {
+  implicit val nameFormat = jsonFormat1(Name)
+  implicit val productPriceFormat = jsonFormat4(ProductPrice)
+  implicit val productFormat = jsonFormat5(Product)
+  implicit val loyaltyIdFormat = jsonFormat1(LoyaltyId)
+  implicit val onHandFormat = jsonFormat1(OnHand)
+  implicit val idFormat = jsonFormat1(Id)
+  implicit val idsFormat = jsonFormat1(Ids)
+  implicit val dateFormat = jsonFormat20(Data)
+  implicit val claXFormat2 = jsonFormat8(claX2)  
+  implicit object claX2Collection extends RootJsonFormat[claX2Collection] {
+    def read(value: JsValue) = claX2Collection(value.convertTo[Array[claX2]])
+    def write(f: claX2Collection) = ??? // got to fix this
+  }
+ }
+ 
+ import MyJsonProtocol3._
+ //
+
  	import MyJsonProtocol2._
 
 
