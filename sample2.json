@@ -1,0 +1,274 @@
+[
+{
+  "EventId": "29ca61f3-b8b6-41e7-8236-802fa232e7cf",
+  "Timestamp": "2016-03-09T20:14:07.5535193Z",
+  "StartTime": "2016-03-09T02:51:04.397",
+  "EndTime": "2016-03-09T02:51:04.397",
+  "ActiveStates": "{\"No Motion\":1,\"Motion Detected\":1,\"Face Detected\":1}",
+  "Created": "2016-03-09T02:51:04.397",
+  "Modified": "2016-03-09T02:51:04.397",
+  "Data": {
+    "AgeRange": {
+      "Name": "30 - 35"
+    },
+    "Company": {
+      "Id": "f3ad1744-0ead-458a-9416-852c43ccde24"
+    },
+    "CompanyType": {
+      "Name": "Retailer"
+    },
+    "ConnectorType": {
+      "Name": "Camera Capturing"
+    },
+    "Content": {
+      "Ids": [
+        "0c0f0a9a-fece-4b3e-abb4-0f508d357220"
+      ]
+    },
+    "Customer": {
+      "LoyaltyId": 0
+    },
+    "DeviceRegistries": [
+      {
+        "Id": "f19f5daa-e9b9-43d0-91a7-51da4fdd0e31",
+        "DeviceName": "Company 3 Cooler",
+        "DeviceType": "CCU"
+      }
+    ],
+    "Emotion": {
+      "Name": "Happy"
+    },
+    "Gender": {
+      "Name": "Male"
+    },
+    "Products": [
+      {
+        "Name": "Molson Canadian",
+        "ProductCategory": "Beverage",
+        "InventoryTrackingNumberType": "SKU",
+        "InventoryTrackingNumber": "438654935776",
+        "ProductPrice": {
+          "RetailPrice": 2.1,
+          "RetailPriceSymbol": "?",
+          "PromotionPrice": 1.8,
+          "PromotionPriceSymbol": "?"
+        }
+      },
+      {
+        "Name": "Coors Original",
+        "ProductCategory": "Beverage",
+        "InventoryTrackingNumberType": "SKU",
+        "InventoryTrackingNumber": "438654935775",
+        "ProductPrice": {
+          "RetailPrice": 1.1,
+          "RetailPriceSymbol": "?",
+          "PromotionPrice": 0.8,
+          "PromotionPriceSymbol": "?"
+        }
+      },
+      {
+        "Name": "Coors Light",
+        "ProductCategory": "Beverage",
+        "InventoryTrackingNumberType": "SKU",
+        "InventoryTrackingNumber": "438654935778",
+        "ProductPrice": {
+          "RetailPrice": 6.1,
+          "RetailPriceSymbol": "?",
+          "PromotionPrice": 5.8,
+          "PromotionPriceSymbol": "?"
+        }
+      },
+      {
+        "Name": "Blue Moon",
+        "ProductCategory": "Beverage",
+        "InventoryTrackingNumberType": "SKU",
+        "InventoryTrackingNumber": "438654935777",
+        "ProductPrice": {
+          "RetailPrice": 4.1,
+          "RetailPriceSymbol": "?",
+          "PromotionPrice": 3.8,
+          "PromotionPriceSymbol": "?"
+        }
+      }
+    ],
+    "Race": {
+      "Name": "Latin"
+    },
+    "Region": {
+      "Name": "Region 01"
+    },
+    "SensorRegistry": {
+      "Name": "Company 3 Camera 01"
+    },
+    "SensorType": {
+      "Name": "Proximity"
+    },
+    "SfuRegistries": {
+      "Ids": [
+        "7effea8c-56dd-4905-bbc3-2158d14cd7cc",
+        "24a7253d-174a-44f0-8145-483cc0f45adb",
+        "bc970c8e-7e41-4889-859b-55c6a3f8ba5d",
+        "46e599f5-8082-499f-b5d0-9d611409a652"
+      ]
+    },
+    "Shelves": {
+      "Ids": [
+        "ea442504-7d64-4c01-bdde-1eb46e53b81c",
+        "d6fe9c78-e21b-4a57-b620-99a7d94d46f9"
+      ]
+    },
+    "State": {
+      "Name": "Face Detected"
+    },
+    "StockLevel": {
+      "OnHand": 0
+    },
+    "Store": {
+      "Id": "268c852d-86b8-4b7c-b865-2f29a3e2307e"
+    },
+    "Unit": {
+      "Id": "52c58781-b2bf-46ea-81ad-b9d9fbacb471"
+    },
+    "UnitType": {
+      "Name": "5-Shelf Cooler"
+    }
+  },
+  "id": "54bfd971-0fec-4e0e-87cc-851a697705e9"
+},
+{
+  "EventId": "dummy event ID",
+  "Timestamp": "2015-03-09T20:14:07.5535193Z",
+  "StartTime": "2015-03-09T02:51:04.397",
+  "EndTime": "2015-03-09T02:51:04.397",
+  "ActiveStates": "{\"No Motion\":1,\"Motion Detected\":1,\"Face Detected\":1}",
+  "Created": "2015-03-09T02:51:04.397",
+  "Modified": "2015-03-09T02:51:04.397",
+  "Data": {
+    "AgeRange": {
+      "Name": "30 - 35"
+    },
+    "Company": {
+      "Id": "f3ad1744-0ead-458a-9416-852c43ccde24"
+    },
+    "CompanyType": {
+      "Name": "Retailer"
+    },
+    "ConnectorType": {
+      "Name": "Camera Capturing"
+    },
+    "Content": {
+      "Ids": [
+        "0c0f0a9a-fece-4b3e-abb4-0f508d357220"
+      ]
+    },
+    "Customer": {
+      "LoyaltyId": 0
+    },
+    "DeviceRegistries": [
+      {
+        "Id": "f19f5daa-e9b9-43d0-91a7-51da4fdd0e31",
+        "DeviceName": "Company 3 Cooler",
+        "DeviceType": "CCU"
+      }
+    ],
+    "Emotion": {
+      "Name": "Happy"
+    },
+    "Gender": {
+      "Name": "Male"
+    },
+    "Products": [
+      {
+        "Name": "Molson Canadian",
+        "ProductCategory": "Beverage",
+        "InventoryTrackingNumberType": "SKU",
+        "InventoryTrackingNumber": "438654935776",
+        "ProductPrice": {
+          "RetailPrice": 2.1,
+          "RetailPriceSymbol": "?",
+          "PromotionPrice": 1.8,
+          "PromotionPriceSymbol": "?"
+        }
+      },
+      {
+        "Name": "Coors Original",
+        "ProductCategory": "Beverage",
+        "InventoryTrackingNumberType": "SKU",
+        "InventoryTrackingNumber": "438654935775",
+        "ProductPrice": {
+          "RetailPrice": 1.1,
+          "RetailPriceSymbol": "?",
+          "PromotionPrice": 0.8,
+          "PromotionPriceSymbol": "?"
+        }
+      },
+      {
+        "Name": "Coors Light",
+        "ProductCategory": "Beverage",
+        "InventoryTrackingNumberType": "SKU",
+        "InventoryTrackingNumber": "438654935778",
+        "ProductPrice": {
+          "RetailPrice": 6.1,
+          "RetailPriceSymbol": "?",
+          "PromotionPrice": 5.8,
+          "PromotionPriceSymbol": "?"
+        }
+      },
+      {
+        "Name": "Blue Moon",
+        "ProductCategory": "Beverage",
+        "InventoryTrackingNumberType": "SKU",
+        "InventoryTrackingNumber": "438654935777",
+        "ProductPrice": {
+          "RetailPrice": 4.1,
+          "RetailPriceSymbol": "?",
+          "PromotionPrice": 3.8,
+          "PromotionPriceSymbol": "?"
+        }
+      }
+    ],
+    "Race": {
+      "Name": "Latin"
+    },
+    "Region": {
+      "Name": "Region 01"
+    },
+    "SensorRegistry": {
+      "Name": "Company 3 Camera 01"
+    },
+    "SensorType": {
+      "Name": "Proximity"
+    },
+    "SfuRegistries": {
+      "Ids": [
+        "7effea8c-56dd-4905-bbc3-2158d14cd7cc",
+        "24a7253d-174a-44f0-8145-483cc0f45adb",
+        "bc970c8e-7e41-4889-859b-55c6a3f8ba5d",
+        "46e599f5-8082-499f-b5d0-9d611409a652"
+      ]
+    },
+    "Shelves": {
+      "Ids": [
+        "ea442504-7d64-4c01-bdde-1eb46e53b81c",
+        "d6fe9c78-e21b-4a57-b620-99a7d94d46f9"
+      ]
+    },
+    "State": {
+      "Name": "Face Detected"
+    },
+    "StockLevel": {
+      "OnHand": 0
+    },
+    "Store": {
+      "Id": "268c852d-86b8-4b7c-b865-2f29a3e2307e"
+    },
+    "Unit": {
+      "Id": "52c58781-b2bf-46ea-81ad-b9d9fbacb471"
+    },
+    "UnitType": {
+      "Name": "5-Shelf Cooler"
+    }
+  },
+  "id": "54bfd971-0fec-4e0e-87cc-851a697705e9"
+}
+]
