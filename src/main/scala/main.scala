@@ -43,7 +43,7 @@ object parseJson {
 	                Store: Id,
 	                Products: Seq[Product])
 
-	case class claX2(EventId: String,
+	case class Element(EventId: String,
 	                 Timestamp: String,
 	                 StartTime: String,
 	                 EndTime: String,
@@ -52,26 +52,13 @@ object parseJson {
 	                 Modified: String,
 	                 Data: Data)
 
-	 object MyJsonProtocol2 extends DefaultJsonProtocol {
-		 implicit val nameFormat = jsonFormat1(Name)
-		 implicit val productPriceFormat = jsonFormat4(ProductPrice)
-		 implicit val productFormat = jsonFormat5(Product)
-		 implicit val loyaltyIdFormat = jsonFormat1(LoyaltyId)
-		 implicit val onHandFormat = jsonFormat1(OnHand)
-		 implicit val idFormat = jsonFormat1(Id)
-		 implicit val idsFormat = jsonFormat1(Ids)
-		 implicit val dateFormat = jsonFormat20(Data)
-		 implicit val claXFormat2 = jsonFormat8(claX2)
- 		}
-
-
  // This is the code that is blowing up
- case class claX2Collection(items: Array[claX2]) extends IndexedSeq[claX2]{
+ case class RootCollection(items: Array[Element]) extends IndexedSeq[Element]{
     def apply(index: Int) = items(index)
     def length = items.length
 }
 
-object MyJsonProtocol3 extends DefaultJsonProtocol {
+object MyJsonProtocol extends DefaultJsonProtocol {
   implicit val nameFormat = jsonFormat1(Name)
   implicit val productPriceFormat = jsonFormat4(ProductPrice)
   implicit val productFormat = jsonFormat5(Product)
@@ -80,30 +67,25 @@ object MyJsonProtocol3 extends DefaultJsonProtocol {
   implicit val idFormat = jsonFormat1(Id)
   implicit val idsFormat = jsonFormat1(Ids)
   implicit val dateFormat = jsonFormat20(Data)
-  implicit val claXFormat2 = jsonFormat8(claX2)  
-  implicit object claX2Collection extends RootJsonFormat[claX2Collection] {
-    def read(value: JsValue) = claX2Collection(value.convertTo[Array[claX2]])
-    def write(f: claX2Collection) = ??? // got to fix this
+  implicit val ElementFormat = jsonFormat8(Element)  
+  implicit object RootCollectionFormat extends RootJsonFormat[RootCollection] {
+    def read(value: JsValue) = RootCollection(value.convertTo[Array[Element]])
+    def write(f: RootCollection) = JsArray(f.toJson)
   }
  }
  
- import MyJsonProtocol3._
- //
-
- 	import MyJsonProtocol2._
-
+ import MyJsonProtocol._
 
 		println("Running Parse JSON")
-		val input = scala.io.Source.fromFile("sample1.json")("UTF-8").mkString.parseJson
+		val input = scala.io.Source.fromFile("sample2.json")("UTF-8").mkString.parseJson
 		println("JSON string read:")
-		//println(input.toString)
+		println(input)
 
-		val cx0 = input.convertTo[claX2]
-		println(cx0.toString)
+		val jsonCollection = input.convertTo[RootCollection]
 
 		// print some items
-		cx0.Data.Products.map(x => println(x))
-
+		jsonCollection.map(y => y.Data.Products.map(x => println(x)))
+		println(jsonCollection.length)
 
 	}
 }
