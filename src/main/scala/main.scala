@@ -78,8 +78,8 @@ object MyJsonProtocol extends DefaultJsonProtocol {
 
 		println("Running Parse JSON")
 		val input = scala.io.Source.fromFile("sample2.json")("UTF-8").mkString.parseJson
-		println("JSON string read:")
-		println(input)
+		//println("JSON string read:")
+		//println(input)
 
 		val jsonCollection = input.convertTo[RootCollection]
 
